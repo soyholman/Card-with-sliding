@@ -22,7 +22,7 @@ section .card .image{
 .card{
 
     border-radius: 20px;
-
+   position: relative;
     background-color: #fff;
 }
 body{
@@ -45,6 +45,17 @@ border: 3px solid #fff;
 
 }
 
+
+
+.card::before{
+height: 40%;
+width: 100%;
+
+background: #7d2ae8;
+    content: "";
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+}
 .card .card-content{
 display: flex;
     padding: 30px;
